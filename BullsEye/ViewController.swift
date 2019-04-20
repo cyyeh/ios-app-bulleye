@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
     slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
     
-    let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+    let insets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     
     let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
     let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)

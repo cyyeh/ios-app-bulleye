@@ -16,8 +16,7 @@ class AboutViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    if let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html") {
-      let url = URL(fileURLWithPath: htmlPath)
+    if let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html") {
       let request = URLRequest(url: url)
       webView.load(request)
     }
